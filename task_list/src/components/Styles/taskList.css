@@ -26,6 +26,7 @@
 .addTask{
     display: flex;
     justify-content: space-evenly;
+    /* align-items: center; */
     margin-bottom: 50px;
 }
 
