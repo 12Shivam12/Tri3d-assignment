@@ -150,13 +150,13 @@ const TaskList = () => {
                                     (
                                         <div className='tasks' key={index}></div>
                                     ) : (
-                                        <div className='tasks' key={index}>
+                                        <div style={{backgroundColor:(index%2 === 0) ? "#ffd6cc" : '#ccccff'}} className='tasks' key={index}>
                                             <div>
                                                 <Heading size={['sm', 'md']}><span style={{ textDecoration: (ele.isCompleted) ? "line-through" : "none" }}>{ele.text}</span></Heading>
                                             </div>
                                             <div>
                                                 <Flex gap={['2', '5']}>
-                                                    <Checkbox colorScheme='green' isChecked={ele.isCompleted} onChange={() => handleCheckbox(index)} size={['sm', 'lg']} /> {/* Adjust checkbox size */}
+                                                    <Checkbox iconColor='white.600'  isChecked={ele.isCompleted} onChange={() => handleCheckbox(index)} size={['sm', 'lg']} /> {/* Adjust checkbox size */}
                                                     <EditIcon color="blue.600" onClick={() => {
                                                         const newText = prompt('Edit task:', ele.text);
                                                         if (newText !== null) {

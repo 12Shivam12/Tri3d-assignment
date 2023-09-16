@@ -32,10 +32,16 @@
 
 .tasks{
     /* border: 1px solid red; */
+    width: 80%;
+    height: 50px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+    
 }
 
 .pointer{
